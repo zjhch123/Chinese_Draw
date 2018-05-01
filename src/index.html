@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>摇一摇抽签</title>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no,email=no" name="format-detection">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script type="text/javascript" compress="no-compress">
+  !function () {
+    function a() {
+      if (parseInt(document.documentElement.clientWidth) > 720) {
+        document.documentElement.style.fontSize = 720 / 640 * 10 / 16 * 1000 + "%";
+      } else {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 10 / 16 * 1000 + "%";
+      }
+    }
+    var b = null;
+    window.addEventListener("resize", function () {
+      clearTimeout(b);
+      b = setTimeout(a, 300);
+    }, !1);
+    a();
+  }(window);
+</script>
+</head>
+<body>
+<div class="g-container">
+  <img src="./assets/bg.png" class="u-bg"/>
+  <img src="./assets/label1.png" class="u-shake J_shake_obj"/>
+</div>
+</body>
+<script>
+
+</script>
+</html>
