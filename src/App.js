@@ -16,7 +16,7 @@ function start() {
       } else {
         alert('没有摇出签哦~请更诚心一些!')
       }
-    }, 1900);
+    }, 3800);
   }
 }
 
@@ -30,7 +30,6 @@ function getResult() {
   document.querySelector('.J_result_get_resolve').setAttribute('data-id', id)
   document.querySelector('.J_modal').style.display = 'block'
 }
-
 
 if (window.DeviceMotionEvent) {
   var speed = 20; // 用来判定的加速度阈值，太大了则很难触发
