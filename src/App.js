@@ -41,8 +41,6 @@ if (window.DeviceMotionEvent) {
     x = acceleration.x;
     y = acceleration.y;
     if (Math.abs(x - lastX) > speed || Math.abs(y - lastY) > speed) {
-      // 用户设备摇动了，触发响应操作
-      // 此处的判断依据是用户设备的加速度大于我们设置的阈值
       start()
     }
     lastX = x;
