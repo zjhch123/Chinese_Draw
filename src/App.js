@@ -31,8 +31,6 @@ function getResult() {
   document.querySelector('.J_modal').style.display = 'block'
 }
 
-start()
-
 if (window.DeviceMotionEvent) {
   var speed = 20; // 用来判定的加速度阈值，太大了则很难触发
   var x, y, z, lastX, lastY, lastZ;
