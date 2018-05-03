@@ -10,10 +10,10 @@ function start() {
   if ([].slice.call(obj.classList).indexOf('shake') == -1) {
     obj.classList.add('shake')
     setTimeout(() => {
-      obj.classList.remove('shake')
-      if (Math.random() > 0.5) {
+      if (Math.random() > 0.3) {
         getResult()
       } else {
+        document.querySelector('.J_shake_obj').classList.remove('shake')
         alert('没有摇出签哦~请更诚心一些!')
       }
     }, 3800);
@@ -30,6 +30,8 @@ function getResult() {
   document.querySelector('.J_result_get_resolve').setAttribute('data-id', id)
   document.querySelector('.J_modal').style.display = 'block'
 }
+
+start()
 
 if (window.DeviceMotionEvent) {
   var speed = 20; // 用来判定的加速度阈值，太大了则很难触发
@@ -63,4 +65,5 @@ document.querySelector('.J_close').addEventListener('click', function (event) {
   document.querySelector('.J_modal').style.display = 'none'
   this.style.display = 'none'
   document.querySelector('.J_result_get_resolve').style.display = 'block'
+  document.querySelector('.J_shake_obj').classList.remove('shake')
 })

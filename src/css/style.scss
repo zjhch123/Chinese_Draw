@@ -77,6 +77,14 @@ body {
     transform: scale(1) translate(0)
   }
 }
+@keyframes up {
+  from {
+    transform: translateY(0)
+  }
+  to {
+    transform: translateY(-2.7rem);
+  }
+}
 .g-container {
   width: 100vw;
   height: 100vh;
@@ -140,14 +148,45 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -.2rem;
-    width: 100vw;
+    bottom: -.3rem;
+    width: 100%;
     transform-origin: bottom;
     z-index: 4;
     transform-style: preserve-3d;
+    .u-box {
+      width: 6.4rem;
+      height: 5.62rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 3;
+    }
+    .u-obj {
+      width: 3.88rem;
+      position: absolute;
+      bottom: 5rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+    }
+    .u-label {
+      width: .64rem;
+      height: 4.65rem;
+      position: absolute;
+      bottom: 2.7rem;
+      left: 3.05rem;
+      z-index: 2;
+    }
     &.shake {
       animation: shake .3s;
       animation-iteration-count: 12;
+      .u-label {
+        animation: up 3.6s linear;
+        animation-fill-mode: forwards;
+      }
     }
   }
   .m-modal {
