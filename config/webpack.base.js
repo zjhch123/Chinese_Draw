@@ -40,9 +40,10 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: 'static/images/[name].[ext]'
+              name: 'static/images/[name].[ext]',
             }
-          }
+          },
+          'image-webpack-loader'
         ]
       },
       {
@@ -53,7 +54,7 @@ module.exports = {
             options: {
               limit: 8192,
               mimetype: 'application/font-woff',
-              name: 'static/fonts/[name].[ext]'
+              name: 'static/fonts/[name].[ext]',
             }
           }
         ]

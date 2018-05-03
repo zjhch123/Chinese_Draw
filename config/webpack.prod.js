@@ -13,7 +13,8 @@ config.module.rules.push({
       'postcss-loader',
       'sass-loader'
     ],
-    fallback: 'style-loader'
+    fallback: 'style-loader',
+    publicPath: '../../'
   }),
   exclude: /node_modules/
 },{
@@ -23,7 +24,8 @@ config.module.rules.push({
       'css-loader',
       'postcss-loader'
     ],
-    fallback: 'style-loader'
+    fallback: 'style-loader',
+    publicPath: '../../'
   }),
   exclude: /node_modules/
 });
@@ -40,7 +42,7 @@ config.plugins.push(
   new ExtractTextPlugin({
     filename: 'static/css/[name]-[hash].css',
     allChunks: true,
-    ignoreOrder: true
+    ignoreOrder: true,
   }),
   new HtmlWebpackPlugin({
     inject: true,

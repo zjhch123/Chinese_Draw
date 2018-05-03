@@ -224,45 +224,46 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.6);
     z-index: 8;
     animation: fade .6s;
     .u-border {
       position: absolute;
-      top: 30%;
+      top: 35%;
       left: 0;
       right: 0;
-      width: 5.8rem;
-      padding: .2rem .1rem;
+      width: 6.4rem;
+      height: 3.62rem;
+      padding: .72rem .8rem 0;
       box-sizing: border-box;
+      background-image: url('../assets/label4.png');
+      background-size: 100% 100%;
       margin: auto;
-      background: #f7cb48;
       text-align: center;
       transform: translateZ(0);
       animation: fadeIn .6s;
       z-index: 8;
-      border-radius: .2rem;
-      box-shadow: 5px 5px 5px rgba(0,0,0,.4);
     }
     .u-title {
-      font-size: .3rem;
+      font-size: .24rem;
       color: #eb3b25;
       font-weight: bolder;
     }
     .u-content {
-      margin-top: .2rem;
-      margin-bottom: .2rem;
-      font-size: .3rem;
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+      font-size: .23rem;
       color:black;
     }
     .u-resolve {
       display: block;
-      margin-top: .3rem;
+      margin-top: .1rem;
+      font-size: .22rem;
       color: red;
     }
     .u-mean {
       color: black;
-      font-size: .24rem;
+      font-size: .20rem;
     }
   }
 }
