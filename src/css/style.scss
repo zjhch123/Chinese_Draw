@@ -5,6 +5,7 @@ html {
 }
 body {
   font-size: 16px;
+  position: relative;
 }
 @keyframes shake {
   0% {
@@ -85,6 +86,14 @@ body {
     transform: translateY(-3rem);
   }
 }
+@keyframes yyy {
+  from {
+    transform: rotate(-5deg)
+  }
+  to {
+    transform: rotate(5deg)
+  }
+}
 .g-container {
   width: 100vw;
   height: 100vh;
@@ -100,6 +109,17 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
+  }
+  .u-yyy {
+    position: absolute;
+    left: .3rem;
+    top: .3rem;
+    width: .8rem;
+    opacity: .9;
+    &.f-yyy {
+      animation: yyy .15s linear infinite;
+      animation-direction: alternate;
+    }
   }
   .u-bull {
     position: absolute;

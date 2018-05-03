@@ -3,6 +3,7 @@ import '@css/style.scss';
 import data from './data.js';
 
 function start() {
+  document.querySelector('.J_tip').classList.remove('f-yyy');
   if (document.querySelector('.J_modal').style.display == 'block') {
     return
   }
