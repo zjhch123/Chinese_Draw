@@ -82,7 +82,7 @@ body {
     transform: translateY(0)
   }
   to {
-    transform: translateY(-2.7rem);
+    transform: translateY(-3rem);
   }
 }
 .g-container {
@@ -153,7 +153,6 @@ body {
     margin: auto;
     transform-origin: bottom;
     z-index: 4;
-    transform-style: preserve-3d;
     .u-box {
       width: 6.4rem;
       height: 5.62rem;
@@ -163,11 +162,12 @@ body {
       right: 0;
       margin: auto;
       z-index: 3;
+      transform: translateZ(1000px);
     }
     .u-obj {
       width: 3.88rem;
       position: absolute;
-      bottom: 5rem;
+      bottom: 4.5rem;
       left: 0;
       right: 0;
       margin: auto;
@@ -177,7 +177,7 @@ body {
       width: .64rem;
       height: 4.65rem;
       position: absolute;
-      bottom: 2.7rem;
+      bottom: 2.2rem;
       left: 3.05rem;
       z-index: 2;
     }
