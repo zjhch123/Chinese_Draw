@@ -229,16 +229,16 @@ body {
     animation: fade .6s;
     .u-border {
       position: absolute;
-      top: 35%;
+      top: 48%;
       left: 0;
       right: 0;
       width: 6.4rem;
       height: 3.62rem;
+      margin: -1.81rem auto 0;
       padding: .72rem .8rem 0;
       box-sizing: border-box;
       background-image: url('../assets/label4.png');
       background-size: 100% 100%;
-      margin: auto;
       text-align: center;
       transform: translateZ(0);
       animation: fadeIn .6s;
@@ -251,7 +251,7 @@ body {
     }
     .u-content {
       margin-top: .1rem;
-      margin-bottom: .1rem;
+      margin-bottom: .3rem;
       font-size: .23rem;
       color:black;
     }
@@ -263,7 +263,7 @@ body {
     }
     .u-mean {
       color: black;
-      font-size: .20rem;
+      font-size: .2rem;
     }
   }
 }

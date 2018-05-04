@@ -20,7 +20,6 @@ function start() {
     }, 3800);
   }
 }
-start()
 function getResult() {
   const id = ~~(Math.random() * 1000 % 100)
   const result = data[id]
