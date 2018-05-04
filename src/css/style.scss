@@ -256,14 +256,28 @@ body {
       color:black;
     }
     .u-resolve {
-      display: block;
       margin-top: .1rem;
       font-size: .22rem;
       color: red;
     }
+    .u-op {
+      margin-top: .05rem;
+    }
+    .u-op .u-resolve {
+      margin: 0 .05rem;
+    }
     .u-mean {
       color: black;
       font-size: .2rem;
+    }
+    .u-close2 {
+      color: white;
+      font-size: .24rem;
+      display: block;
+      width: 1.4rem;
+      margin: auto;
+      text-align: center;
+      border: 1px solid white;
     }
   }
 }
