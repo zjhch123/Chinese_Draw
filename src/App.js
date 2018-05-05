@@ -2,6 +2,7 @@ import '@css/base.css';
 import '@css/style.scss';
 import data from './data.js';
 
+
 function start() {
   document.querySelector('.J_tip').classList.remove('f-yyy');
   if (document.querySelector('.J_modal').style.display == 'block') {
@@ -11,12 +12,12 @@ function start() {
   if ([].slice.call(obj.classList).indexOf('shake') == -1) {
     obj.classList.add('shake')
     setTimeout(() => {
-      if (Math.random() > 0.3) {
+      // if (Math.random() > 0.3) {
         getResult()
-      } else {
-        document.querySelector('.J_shake_obj').classList.remove('shake')
-        alert('没有摇出签哦~请更诚心一些!')
-      }
+      // } else {
+      //   document.querySelector('.J_shake_obj').classList.remove('shake')
+      //   alert('没有摇出签哦~请更诚心一些!')
+      // }
     }, 3800);
   }
 }
@@ -50,9 +51,11 @@ function draw(id) {
     ctx.fillText(title, canvas.width / 2 + 10, 100);
     ctx.fillStyle = 'black'
     ctx.font = '24px 宋体'
-    ctx.fillText(content1, canvas.width / 2 + 10, 140, 400);
-    ctx.fillText(content2, canvas.width / 2 + 10, 175, 400);
+    ctx.textAlign = "left"
+    ctx.fillText(content1, 140, 140);
+    ctx.fillText(content2, 140, 175);
     ctx.font = '20px 宋体'
+    ctx.textAlign = "center"
     ctx.fillText(mean, canvas.width / 2 + 10, 230);
     ctx.fillText(resolve, canvas.width / 2 + 10, 260);
     document.querySelector('.J_save_pic').src = canvas.toDataURL('image / jpeg ', 0.8);
