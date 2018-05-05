@@ -12,12 +12,12 @@ function start() {
   if ([].slice.call(obj.classList).indexOf('shake') == -1) {
     obj.classList.add('shake')
     setTimeout(() => {
-      // if (Math.random() > 0.3) {
+      if (Math.random() > 0.3) {
         getResult()
-      // } else {
-      //   document.querySelector('.J_shake_obj').classList.remove('shake')
-      //   alert('没有摇出签哦~请更诚心一些!')
-      // }
+      } else {
+        document.querySelector('.J_shake_obj').classList.remove('shake')
+        alert('没有摇出签哦~请更诚心一些!')
+      }
     }, 3800);
   }
 }
@@ -58,7 +58,7 @@ function draw(id) {
     ctx.textAlign = "center"
     ctx.fillText(mean, canvas.width / 2 + 10, 230);
     ctx.fillText(resolve, canvas.width / 2 + 10, 260);
-    document.querySelector('.J_save_pic').src = canvas.toDataURL('image / jpeg ', 0.8);
+    document.querySelector('.J_save_pic').src = canvas.toDataURL('image/png ', 0.8);
     document.querySelector('.J_modal2').style.display = 'block'
   }
   img.src = require('./assets/label4.png')
@@ -111,3 +111,4 @@ document.querySelector('.J_close2').addEventListener('click', function (event) {
 })
 
 launch()
+start()
