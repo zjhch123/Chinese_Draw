@@ -111,4 +111,3 @@ document.querySelector('.J_close2').addEventListener('click', function (event) {
 })
 
 launch()
-start()
